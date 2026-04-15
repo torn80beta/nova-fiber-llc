@@ -23,3 +23,9 @@ body {
   color: var(--foreground);
   font-family: Roboto, sans-serif;
 }
+
+@layer components {
+  .navbar-item {
+    @apply text-white hover:text-gray-300;
+  }
+}

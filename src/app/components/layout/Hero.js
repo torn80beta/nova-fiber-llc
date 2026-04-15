@@ -1,23 +1,23 @@
-import React from "react";
+"use client";
 
-const Hero = () => {
+export default function Hero() {
   return (
     <div className="bg-[url('/image/hero.jpg')] bg-cover bg-center min-h-screen flex flex-col">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="box-border max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Menu */}
         <nav className="flex justify-between items-center py-6">
           <div className="text-white text-2xl font-bold">NovaFiber LLC</div>
           <div className="hidden md:flex space-x-8">
-            <a href="#features" className="text-white hover:text-gray-300">
+            <a href="#features" className="navbar-item">
               Features
             </a>
-            <a href="#pricing" className="text-white hover:text-gray-300">
+            <a href="#pricing" className="navbar-item">
               Pricing
             </a>
-            <a href="#about" className="text-white hover:text-gray-300">
+            <a href="#about" className="navbar-item">
               About Us
             </a>
-            <a href="#contacts" className="text-white hover:text-gray-300">
+            <a href="#contacts" className="navbar-item">
               Contacts
             </a>
           </div>
@@ -38,6 +38,4 @@ const Hero = () => {
       </div>
     </div>
   );
-};
-
-export default Hero;
+}
