@@ -14,8 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-green-400">
-        <main className="grow">{children}</main>
+      <body className="">
+        <main className="">{children}</main>
       </body>
     </html>
   );
