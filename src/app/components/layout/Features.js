@@ -2,24 +2,19 @@ import { MoveRight } from "lucide-react";
 
 export default function Features() {
   return (
-    // <div className="box-border max-w-7xl">
-    // <div
-    //   id="features"
-    //   className=" min-h-84 max-w-360 flex flex-row flex-wrap items-center justify-center px-16"
-    // >
     <div
       id="features"
-      className=" py-20 max-w-360 px-16 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7 items-center justify-center"
+      className=" py-10 desktop:py-20 max-w-360 px-16 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-7 items-center justify-center"
     >
       {/* Heading */}
-      <div className="min-w-60 pb-6 pl-1.5  xl:mr-26 self-start xl:self-center">
+      <div className="min-w-60 pb-6 pl-1.5 desktop:mr-26 self-start desktop:self-center">
         <p className="text-3xl font-bold  md:justify-self-start">
           Why <br /> Choosing Us
         </p>
       </div>
 
       {/* Features */}
-      {/* <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-7"> */}
+
       <div className="max-w-56 justify-self-center">
         <p className="text-xl font-bold mb-5">Luxury facilities</p>
         <p className="text-sm mb-3.5 text-justify">
@@ -65,8 +60,6 @@ export default function Features() {
           />
         </div>
       </div>
-      {/* </div> */}
     </div>
-    // </div>
   );
 }
