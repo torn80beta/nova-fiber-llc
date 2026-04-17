@@ -3,16 +3,18 @@
 export default function Hero() {
   return (
     <div className="bg-[url('/image/hero.jpg')] bg-cover bg-center min-h-screen min-w-full flex flex-col justify-between">
-      <div className="box-border max-w-7xl mx-auto ">
+      <div className="box-border w-full max-w-360 mx-auto ">
         {/* Menu */}
-        <nav className="flex justify-between items-center py-6 px-6">
-          <div className="text-white text-2xl font-bold">NovaFiber LLC</div>
-          <div className="hidden md:flex space-x-8">
+        <nav className="flex justify-between items-center py-5 md:py-10 px-5 md:px-20 mb-20 md:mb-10">
+          <div className="text-white text-[1.75rem] font-bold">
+            NovaFiber LLC
+          </div>
+          <div className="hidden md:flex space-x-10">
             <a href="#features" className="navbar-item">
               Features
             </a>
-            <a href="#pricing" className="navbar-item">
-              Pricing
+            <a href="#products" className="navbar-item">
+              Products
             </a>
             <a href="#about" className="navbar-item">
               About Us

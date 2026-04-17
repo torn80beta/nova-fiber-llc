@@ -34,11 +34,12 @@ body {
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-size: 16px;
   }
 }
 
 @layer components {
   .navbar-item {
-    @apply text-white hover:text-gray-300 text-sm;
+    @apply text-white hover:text-gray-300 text-lg;
   }
 }

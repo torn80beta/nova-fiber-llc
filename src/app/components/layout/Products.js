@@ -3,8 +3,11 @@ import Image from "next/image";
 
 export default function Products() {
   return (
-    <div className="py-10 max-w-360 px-16 bg-[#F7F7F7] flex flex-col gap-10">
-      <p className="text-2xl sm:text-3xl font-bold text-center">
+    <div
+      id="products"
+      className="py-10 max-w-360 px-16 bg-[#F7F7F7] flex flex-col gap-10"
+    >
+      <p className="text-3xl sm:text-4xl font-bold text-center">
         Best Selling Products
       </p>
       <div
