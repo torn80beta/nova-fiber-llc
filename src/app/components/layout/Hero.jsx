@@ -16,6 +16,9 @@ export default function Hero() {
             <a href="#products" className="navbar-item">
               Products
             </a>
+            <a href="#experiences" className="navbar-item">
+              Experience
+            </a>
             <a href="#about" className="navbar-item">
               About Us
             </a>
