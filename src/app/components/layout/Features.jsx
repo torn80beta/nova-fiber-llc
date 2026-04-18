@@ -4,7 +4,7 @@ export default function Features() {
   return (
     <div
       id="features"
-      className="py-10 desktop:py-20 max-w-360 px-16 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-7 items-center justify-center"
+      className="py-10 desktop:py-20 max-w-360 w-full px-16 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-7 items-center justify-center"
     >
       {/* Heading */}
       <div className="min-w-60 pb-6 pl-1.5 desktop:mr-26 self-start desktop:self-center">
@@ -30,7 +30,7 @@ export default function Features() {
           />
         </div>
       </div>
-      <div className="max-w-71 justify-self-center">
+      <div className="max-w-71 desktop:justify-self-center">
         <p className="text-2xl font-bold mb-5">Affordable Price</p>
         <p className="mb-3.5 text-justify">
           You can get a workspace of the highst quality at an affordable price

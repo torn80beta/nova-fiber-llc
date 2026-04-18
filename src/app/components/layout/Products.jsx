@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <div
       id="products"
-      className="py-10 max-w-360 px-22.5 bg-[#F7F7F7] flex flex-col gap-10"
+      className="py-10 max-w-360 px-22.5 md:px-37 bg-[#F7F7F7] flex flex-col gap-10"
     >
       <p className="text-3xl sm:text-4xl font-bold text-center">
         Best Selling Products

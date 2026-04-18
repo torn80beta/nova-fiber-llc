@@ -5,30 +5,39 @@ export default function Experiences() {
   return (
     <div
       id="experiences"
-      className="max-w-360 py-40 xl:py-60 grid grid-cols-1 xl:grid-cols-2 gap-30 items-center justify-center overflow-hidden"
+      className="max-w-360 w-full py-40 grid grid-cols-1 desktop:grid-cols-2 gap-30 items-center justify-center overflow-hidden"
     >
-      {/* Основной контейнер с картинкой */}
-      <div class="relative z-10 w-157.25 h-111.25">
-        {/*  Декоративная белая подложка (сверху слева)*/}
-        {/* <div class="absolute top-[-66] left-[-172] w-[600px] h-[66px] bg-[#F7F7F7] rounded-t-[20px] z-0"></div> */}
-        <div class="absolute -top-1/7 -left-1/5 w-150 h-16.5 bg-[#F7F7F7] rounded-t-[20px] z-0"></div>
+      <div className="w-full max-w-4xl mx-auto pr-20 ">
+        {/* Container: */}
+        <div className="relative z-10 w-full h-full aspect-[1.35] flex items-center justify-center">
+          {/* Top left decor: */}
+          <div className="absolute -top-[12%] -left-[10%] w-[95%] h-[15%] bg-[#F7F7F7] rounded-t-2xl md:rounded-t-[20px] z-0"></div>
 
-        {/*  Декоративная белая подложка (справа) */}
-        <div class="absolute top-1/6 -right-1/11 w-15 h-75 bg-[#F7F7F7] rounded-r-[20px] z-0"></div>
+          {/* Right decor: */}
+          <div className="absolute top-[15%] -right-[8%] w-[10%] h-[65%] bg-[#F7F7F7] rounded-r-2xl md:rounded-r-[20px] z-0"></div>
 
-        {/* ТЕНЬ */}
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] h-15 bg-linear-to-br from-black to-[#f8941b] blur-2xl rounded-full z-[-1]"></div>
+          {/* Shadow: */}
+          <div className="absolute -bottom-[4%] left-1/2 -translate-x-1/2 w-[90%] h-[12%] bg-linear-to-br from-[#3b280f] to-[#f8941b] blur-xl md:blur-xl rounded-full z-[-1] opacity-50"></div>
 
-        {/*  Сама фотография */}
-        <Image src="/image/experiences.jpg" alt="Experiences" fill={true} />
+          {/* Image Wrapper: */}
+          <div className="w-full h-full z-10 rounded-r-2xl md:rounded-r-3xl ">
+            <Image
+              src="/image/experiences.jpg"
+              alt="Experiences"
+              fill={true}
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Next.js Image optimization for responsive images
+            />
+          </div>
+        </div>
       </div>
 
-      <div className="flex flex-col gap-5">
+      <div className="px-5 md:px-none flex flex-col gap-5  text-right desktop:text-left items-end desktop:items-start">
         <p className="text-[1.25rem] text-[#E58411] tracking-widest">
           EXPERIENCE
         </p>
 
-        <p className="text-4xl font-bold  md:justify-self-start max-w-104">
+        <p className="text-4xl font-bold  max-w-104">
           We Provide You The <br /> Best Experience
         </p>
 

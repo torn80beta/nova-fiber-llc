@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center w-full">
       <Hero />
-      <Features />
-      <Products />
-      <Experiences />
+      <div className="flex flex-col items-center">
+        <Features />
+        <Products />
+        <Experiences />
+      </div>
     </div>
   );
 }
