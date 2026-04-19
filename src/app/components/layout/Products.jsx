@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Products() {
   return (
-    <div
+    <section
       id="products"
       className="py-10 max-w-360 px-22.5 md:px-37 bg-[#F7F7F7] flex flex-col gap-10"
     >
@@ -29,6 +29,6 @@ export default function Products() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

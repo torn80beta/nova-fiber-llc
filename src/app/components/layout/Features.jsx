@@ -2,7 +2,7 @@ import { MoveRight } from "lucide-react";
 
 export default function Features() {
   return (
-    <div
+    <section
       id="features"
       className="py-10 desktop:py-20 max-w-360 w-full px-16 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-7 items-center justify-center"
     >
@@ -60,6 +60,6 @@ export default function Features() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

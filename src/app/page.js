@@ -2,6 +2,7 @@ import Features from "./components/layout/Features";
 import Hero from "./components/layout/Hero";
 import Products from "./components/layout/Products";
 import Experiences from "./components/layout/Experiences";
+import Materials from "./components/layout/Materials";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Features />
         <Products />
         <Experiences />
+        <Materials />
       </div>
     </div>
   );

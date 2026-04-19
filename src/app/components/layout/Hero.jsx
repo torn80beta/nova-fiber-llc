@@ -2,8 +2,8 @@
 
 export default function Hero() {
   return (
-    <div className="bg-[url('/image/hero.jpg')] bg-cover bg-center min-h-screen min-w-full flex flex-col justify-between">
-      <div className="box-border w-full max-w-360 mx-auto ">
+    <section className="bg-[url('/image/hero.jpg')] bg-cover bg-center min-h-screen min-w-full flex flex-col justify-between">
+      <header className="box-border w-full max-w-360 mx-auto ">
         {/* Menu */}
         <nav className="flex justify-between items-center py-5 md:py-10 px-5 md:px-20 mb-20 md:mb-10">
           <div className="text-white text-[1.75rem] font-bold">
@@ -18,6 +18,9 @@ export default function Hero() {
             </a>
             <a href="#experiences" className="navbar-item">
               Experience
+            </a>
+            <a href="#materials" className="navbar-item">
+              Materials
             </a>
             <a href="#about" className="navbar-item">
               About Us
@@ -40,8 +43,8 @@ export default function Hero() {
             </p>
           </div>
         </div>
-      </div>
+      </header>
       <span className="h-20 bg-linear-to-t from-white to-transparent"></span>
-    </div>
+    </section>
   );
 }

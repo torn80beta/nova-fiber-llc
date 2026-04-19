@@ -3,9 +3,9 @@ import { MoveRight } from "lucide-react";
 
 export default function Experiences() {
   return (
-    <div
+    <section
       id="experiences"
-      className="max-w-360 w-full py-40 grid grid-cols-1 desktop:grid-cols-2 gap-30 items-center justify-center overflow-hidden"
+      className="max-w-360 w-full pt-40 pb-20 grid grid-cols-1 desktop:grid-cols-2 gap-30 items-center justify-center overflow-hidden"
     >
       <div className="w-full max-w-4xl mx-auto pr-20 ">
         {/* Container: */}
@@ -55,6 +55,6 @@ export default function Experiences() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
