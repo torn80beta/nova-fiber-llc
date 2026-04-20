@@ -1,4 +1,4 @@
-import Slider from "../shared/Slider";
+import SimpleSlider from "../shared/Slider";
 
 export default function Testimonials() {
   return (
@@ -9,10 +9,10 @@ export default function Testimonials() {
       <p className="mb-5 text-[1.25rem] text-[#E58411] tracking-widest">
         TESTIMONIALS
       </p>
-      <p className="text-4xl font-bold  max-w-104 mb-12">Our Client Reviews</p>
+      <p className="text-4xl font-bold  max-w-103 mb-12">Our Client Reviews</p>
 
-      <div className="w-full max-w-full">
-        <Slider />
+      <div className="max-w-90 sm:max-w-149 md:max-w-218.5 desktop:max-w-360 flex flex-col items-center">
+        <SimpleSlider />
       </div>
     </section>
   );
