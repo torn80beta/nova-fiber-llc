@@ -20,7 +20,7 @@ export default function Experiences() {
           <div className="absolute -bottom-[4%] left-1/2 -translate-x-1/2 w-[90%] h-[12%] bg-linear-to-br from-[#3b280f] to-[#f8941b] blur-xl md:blur-xl rounded-full z-[-1] opacity-50"></div>
 
           {/* Image Wrapper: */}
-          <div className="w-full h-full z-10 rounded-r-2xl md:rounded-r-3xl ">
+          <div className="relative w-full h-full z-10 rounded-r-2xl md:rounded-r-3xl ">
             <Image
               src="/image/experiences.jpg"
               alt="Experiences"

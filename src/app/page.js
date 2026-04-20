@@ -3,6 +3,7 @@ import Hero from "./components/layout/Hero";
 import Products from "./components/layout/Products";
 import Experiences from "./components/layout/Experiences";
 import Materials from "./components/layout/Materials";
+import Testimonials from "./components/layout/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Products />
         <Experiences />
         <Materials />
+        <Testimonials />
       </div>
     </div>
   );

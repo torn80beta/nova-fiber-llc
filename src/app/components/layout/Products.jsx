@@ -23,8 +23,7 @@ export default function Products() {
               src={product.image}
               alt={product.name}
               fill={true}
-              // width={268}
-              // height={492}
+              sizes="(max-width: 768px) 100vw, 60vw"
             />
           </div>
         ))}

@@ -22,8 +22,8 @@ export default function Hero() {
             <a href="#materials" className="navbar-item">
               Materials
             </a>
-            <a href="#about" className="navbar-item">
-              About Us
+            <a href="#testimonials" className="navbar-item">
+              Testimonials
             </a>
             <a href="#contacts" className="navbar-item">
               Contacts

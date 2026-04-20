@@ -77,7 +77,7 @@ export default function Materials() {
           <div className="absolute -bottom-[4%] left-1/2 -translate-x-1/2 w-[90%] h-[12%] bg-linear-to-b from-[#3b280f] to-[#c98a3e] blur-xl md:blur-xl rounded-full z-[-1] opacity-50"></div>
 
           {/* Image */}
-          <div className="w-full h-full z-10">
+          <div className="relative w-full h-full z-10">
             <Image
               src="/image/materials_1.jpg"
               alt="Table"
