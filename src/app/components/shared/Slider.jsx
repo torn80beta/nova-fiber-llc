@@ -101,12 +101,12 @@ export default function SimpleSlider() {
             slidesPerView: 3,
           },
         }}
-        className="pb-16" // Отступ снизу для тени
+        className="w-full pb-16" // Отступ снизу для тени
       >
         {testimonials.map((item) => (
-          <SwiperSlide key={item.id} className="w-92.5 h-130 py-10">
+          <SwiperSlide key={item.id} className="w-full h-130 py-10">
             {/* === КАРТОЧКА === */}
-            <div className="relative h-130  mx-auto group flex flex-col items-center">
+            <div className="relative h-130 w-full mx-auto group flex flex-col items-center">
               {/* Мягкая воздушная тень (реализуется через размытый div на заднем фоне) */}
               {/* <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[85%] h-[20%] bg-black/15 blur-2xl rounded-full z-0"></div> */}
 
@@ -171,7 +171,7 @@ export default function SimpleSlider() {
       </Swiper>
 
       {/* Кастомная кнопка НАЗАД */}
-      <button className="swiper-button-prev-custom absolute -left-[0%] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
+      <button className="hidden md:flex swiper-button-prev-custom absolute -left-[0%] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
         <svg
           className="w-6 h-6 text-black"
           fill="none"
@@ -188,7 +188,7 @@ export default function SimpleSlider() {
       </button>
 
       {/* Кастомная кнопка ВПЕРЕД */}
-      <button className="swiper-button-next-custom absolute -right-[0%]  top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
+      <button className="hidden md:flex swiper-button-next-custom absolute -right-[0%]  top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
         <svg
           className="w-6 h-6 text-black"
           fill="none"
