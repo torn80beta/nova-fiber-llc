@@ -7,7 +7,7 @@ export default function Experiences() {
   return (
     <section
       id="experiences"
-      className="max-w-360 w-full pt-40 pb-20 grid grid-cols-1 desktop:grid-cols-2 gap-30 items-center justify-center overflow-hidden"
+      className="max-w-360 w-full md:w-218.5 desktop:w-full pt-40 pb-20 grid grid-cols-1 desktop:grid-cols-2 gap-30 items-center justify-center overflow-hidden"
     >
       <div className="w-full max-w-4xl mx-auto pr-20 ">
         {/* Container: */}

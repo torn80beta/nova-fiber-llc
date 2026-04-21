@@ -7,7 +7,7 @@ export default function Materials() {
   return (
     <section
       id="materials"
-      className="max-w-360 w-full py-10 grid grid-cols-1 desktop:grid-cols-2 gap-10 items-center justify-center overflow-hidden"
+      className="max-w-360 w-full md:w-218.5 desktop:w-full  py-10 grid grid-cols-1 desktop:grid-cols-2 gap-10 items-center justify-center overflow-hidden"
     >
       {/* Description */}
       <div className="px-5 flex flex-col gap-5  ">

@@ -18,7 +18,10 @@ export default function Footer() {
             ></iframe>
           </div>
 
-          <div className="h-full flex flex-col items-center justify-between gap-10 ">
+          <div
+            id="contacts"
+            className="h-full flex flex-col items-center justify-between gap-10 "
+          >
             <div className="flex flex-row items-start justify-center gap-10 sm:gap-40 ">
               {/* Contacts */}
               <div className="min-h-fit flex flex-col gap-4">
