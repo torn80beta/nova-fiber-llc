@@ -58,6 +58,7 @@ export default function SimpleSlider() {
                   fill={true}
                   sizes="(max-width: 768px) 100vw, 60vw"
                   className="absolute inset-0 w-full h-full object-cover"
+                  loading="eager"
                 />
 
                 {/* Gradient */}
@@ -78,6 +79,7 @@ export default function SimpleSlider() {
                       fill={true}
                       sizes="(max-width: 768px) 100vw, 60vw"
                       className="absolute inset-0 w-full h-full object-cover"
+                      loading="eager"
                     />
                   </div>
 

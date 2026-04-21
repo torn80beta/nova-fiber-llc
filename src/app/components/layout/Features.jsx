@@ -1,3 +1,5 @@
+"use client";
+
 import { MoveRight } from "lucide-react";
 
 export default function Features() {

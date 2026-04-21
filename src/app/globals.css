@@ -16,6 +16,7 @@
   --text-xl: 1.2rem;
   --text-3xl: 2.1rem;
   --breakpoint-desktop: 72rem;
+  --breakpoint-tablet: 48rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
