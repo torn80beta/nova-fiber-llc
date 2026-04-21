@@ -2,77 +2,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import { testimonials } from "@/lib/constants";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function SimpleSlider() {
-  const testimonials = [
-    {
-      id: 1,
-      name: "Bang Upin",
-      role: "Pedagang Asongan",
-      quote:
-        "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
-      rating: 4,
-      bgImage:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop",
-      avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
-    },
-    {
-      id: 2,
-      name: "Ibuk Sukijan",
-      role: "Ibu Rumah Tangga",
-      quote:
-        "Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah",
-      rating: 5,
-      bgImage:
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
-      avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
-    },
-    {
-      id: 3,
-      name: "Mpok Ina",
-      role: "Karyawan Swasta",
-      quote: "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak",
-      rating: 5,
-      bgImage:
-        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop",
-      avatar:
-        "https://images.unsplash.com/photo-1531123897727-8f129e1bfa8ea?q=80&w=200&auto=format&fit=crop",
-    },
-    // Можно добавить еще карточки для скролла
-    {
-      id: 4,
-      name: "Pak Budi",
-      role: "Pengusaha",
-      quote: "Desain interior yang sangat memuaskan dan elegan.",
-      rating: 5,
-      bgImage:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
-    },
-    {
-      id: 5,
-      name: "Ibuk Sukijan",
-      role: "Ibu Rumah Tangga",
-      quote:
-        "Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah",
-      rating: 5,
-      bgImage:
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
-      avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
-    },
-  ];
-
   return (
-    // <div className="relative max-w-90 sm:max-w-149 md:max-w-218.5 desktop:max-w-360 mx-auto bg-[#FAFAFA] py-20 px-4">
-    <div className="relative max-w-full mx-auto py-20 px-10 ">
+    <div className="relative  w-full mx-auto py-0">
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
         navigation={{
@@ -88,8 +26,8 @@ export default function SimpleSlider() {
           clickable: true,
         }}
         loop={true}
-        spaceBetween={40} // Расстояние между слайдами
-        slidesPerView={1} // По умолчанию (мобильные)
+        spaceBetween={40}
+        slidesPerView={1}
         breakpoints={{
           360: {
             slidesPerView: 1,
@@ -101,31 +39,36 @@ export default function SimpleSlider() {
             slidesPerView: 3,
           },
         }}
-        className="w-full pb-16" // Отступ снизу для тени
+        className="min-w-full"
       >
         {testimonials.map((item) => (
-          <SwiperSlide key={item.id} className="w-full h-130 py-10">
-            {/* === КАРТОЧКА === */}
+          <SwiperSlide
+            key={item.id}
+            className="w-full h-130 pt-10 pb-15 cursor-pointer"
+          >
+            {/* Card */}
             <div className="relative h-130 w-full mx-auto group flex flex-col items-center">
-              {/* Мягкая воздушная тень (реализуется через размытый div на заднем фоне) */}
-              {/* <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[85%] h-[20%] bg-black/15 blur-2xl rounded-full z-0"></div> */}
-
-              {/* Основной контейнер с картинкой */}
-              <div className="relative w-full sm:w-[370px] h-full rounded-4xl overflow-hidden z-10 shadow-sm">
-                {/* Фоновая картинка интерьера */}
+              {/* Container */}
+              <div className="relative w-full sm:w-92.5 h-full rounded-4xl overflow-hidden z-10 shadow-sm">
+                {/* Background image */}
                 <img
                   src={item.bgImage}
                   alt="Interior"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
 
-                {/* Легкий градиент поверх картинки, чтобы текст лучше читался (опционально) */}
+                {/* Gradient */}
                 <div className="absolute inset-0 bg-black/10"></div>
 
-                {/* Белая плашка с текстом (позиционирована абсолютно внизу карточки) */}
-                <div className="absolute bottom-5 left-5 right-5 bg-white rounded-3xl px-6 pb-8 pt-12 text-center shadow-lg">
-                  {/* Аватар пользователя (выступает вверх) */}
-                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full border-[6px] border-white overflow-hidden bg-white shadow-sm">
+                {/* Text cover */}
+                <div className="absolute bottom-5 left-5 right-5 bg-white rounded-3xl px-6 pb-8 pt-12 text-center shadow-lg z-0">
+                  {/* Avatar cower */}
+                  <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full overflow-hidden bg-white -z-10"></div>
+                  {/* Shadow */}
+                  <div className="absolute bottom-[85%] left-1/2 -translate-x-1/2 w-[10%] h-[8%] bg-linear-to-bl from-[#000000] to-[#916413] blur-lg rounded-2xl opacity-90 z-[-1]"></div>
+
+                  {/* Avatar */}
+                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden bg-white ">
                     <img
                       src={item.avatar}
                       alt={item.name}
@@ -133,18 +76,18 @@ export default function SimpleSlider() {
                     />
                   </div>
 
-                  {/* Текстовый контент */}
+                  {/* Text */}
                   <h3 className="text-[#1E1E1E] font-bold text-lg">
                     {item.name}
                   </h3>
                   <p className="text-[#8E8E8E] text-xs mt-1 mb-5">
                     {item.role}
                   </p>
-                  <p className="text-[#1E1E1E] text-[14px] leading-relaxed mb-6 font-medium line-clamp-3">
+                  <p className="text-[#1E1E1E] text-[14px] leading-relaxed mb-6 font-medium line-clamp-2">
                     {item.quote}
                   </p>
 
-                  {/* Звезды рейтинга */}
+                  {/* Rating */}
                   <div className="flex justify-center gap-1.5">
                     {[...Array(5)].map((_, index) => (
                       <svg
@@ -163,15 +106,18 @@ export default function SimpleSlider() {
                   </div>
                 </div>
               </div>
+
+              {/* Shadow: */}
+              <div className="absolute -bottom-[3%] left-1/2 -translate-x-1/2 w-[65%] h-[10%] bg-linear-to-bl from-[#000000] to-[#a89f93] blur-xl rounded-full z-[-1] opacity-50"></div>
             </div>
-            {/* === КОНЕЦ КАРТОЧКИ === */}
+            {/* === Card End === */}
           </SwiperSlide>
         ))}
         <div className="swiper-pagination"></div>
       </Swiper>
 
-      {/* Кастомная кнопка НАЗАД */}
-      <button className="hidden md:flex swiper-button-prev-custom absolute -left-[0%] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
+      {/* Back Button */}
+      <button className="hidden md:flex swiper-button-prev-custom absolute left-[1%] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
         <svg
           className="w-6 h-6 text-black"
           fill="none"
@@ -187,8 +133,8 @@ export default function SimpleSlider() {
         </svg>
       </button>
 
-      {/* Кастомная кнопка ВПЕРЕД */}
-      <button className="hidden md:flex swiper-button-next-custom absolute -right-[0%]  top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
+      {/* Forward Button */}
+      <button className="hidden md:flex swiper-button-next-custom absolute right-[1%]  top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
         <svg
           className="w-6 h-6 text-black"
           fill="none"
