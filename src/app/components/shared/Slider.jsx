@@ -3,6 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { testimonials } from "@/lib/constants";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -51,9 +52,11 @@ export default function SimpleSlider() {
               {/* Container */}
               <div className="relative w-full sm:w-92.5 h-full rounded-4xl overflow-hidden z-10 shadow-sm">
                 {/* Background image */}
-                <img
+                <Image
                   src={item.bgImage}
                   alt="Interior"
+                  fill={true}
+                  sizes="(max-width: 768px) 100vw, 60vw"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
 
@@ -69,10 +72,12 @@ export default function SimpleSlider() {
 
                   {/* Avatar */}
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden bg-white ">
-                    <img
+                    <Image
                       src={item.avatar}
                       alt={item.name}
-                      className="w-full h-full object-cover"
+                      fill={true}
+                      sizes="(max-width: 768px) 100vw, 60vw"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                   </div>
 
