@@ -4,6 +4,7 @@ import Products from "./components/layout/Products";
 import Experiences from "./components/layout/Experiences";
 import Materials from "./components/layout/Materials";
 import Testimonials from "./components/layout/Testimonials";
+import Footer from "./components/layout/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Experiences />
         <Materials />
         <Testimonials />
+        <Footer />
       </div>
     </div>
   );
