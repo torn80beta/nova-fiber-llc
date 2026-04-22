@@ -1,6 +1,7 @@
 "use client";
 
-import SimpleSlider from "../shared/Slider";
+import ReviewCard from "../shared/ReviewCard";
+import Slider from "../shared/Slider";
 import { testimonials } from "@/lib/constants";
 
 export default function Testimonials() {
@@ -15,7 +16,7 @@ export default function Testimonials() {
       <p className="text-4xl font-bold  max-w-103">Our Client Reviews</p>
 
       <div className="max-w-90 sm:max-w-149 md:max-w-218.5 desktop:max-w-360 flex flex-col items-center">
-        <SimpleSlider slides={testimonials} />
+        <Slider slides={testimonials} CardComponent={ReviewCard} />
       </div>
     </section>
   );

@@ -95,4 +95,31 @@ const testimonials = [
   },
 ];
 
-export { products, testimonials };
+const works = [
+  {
+    id: 1,
+    name: "White Sofa",
+    before: "/image/products/photo_1_1.jpg",
+    after: "/image/products/photo_1_2.jpg",
+  },
+  {
+    id: 2,
+    name: "Gray Sofa",
+    before: "/image/products/photo_2_1.jpg",
+    after: "/image/products/photo_2_2.jpg",
+  },
+  {
+    id: 3,
+    name: "White Mattress",
+    before: "/image/products/photo_3_1.jpg",
+    after: "/image/products/photo_3_2.jpg",
+  },
+  {
+    id: 4,
+    name: "Red Sofa",
+    before: "/image/products/photo_4_1.jpg",
+    after: "/image/products/photo_4_2.jpg",
+  },
+];
+
+export { products, testimonials, works };

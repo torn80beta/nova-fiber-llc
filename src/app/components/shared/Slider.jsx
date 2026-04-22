@@ -2,13 +2,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-import ReviewCard from "./ReviewCard";
+// import ReviewCard from "./ReviewCard";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function SimpleSlider({ slides }) {
+export default function Slider({ slides, CardComponent }) {
   return (
     <div className="relative  w-full mx-auto py-0">
       <Swiper
@@ -17,9 +17,9 @@ export default function SimpleSlider({ slides }) {
           prevEl: ".swiper-button-prev-custom",
           nextEl: ".swiper-button-next-custom",
         }}
-        autoplay={{
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   pauseOnMouseEnter: true,
+        // }}
         pagination={{
           el: ".swiper-pagination",
           type: "bullets",
@@ -28,6 +28,7 @@ export default function SimpleSlider({ slides }) {
         loop={true}
         spaceBetween={40}
         slidesPerView={1}
+        allowTouchMove={false}
         breakpoints={{
           360: {
             slidesPerView: 1,
@@ -46,14 +47,14 @@ export default function SimpleSlider({ slides }) {
             key={item.id}
             className="w-full h-130 pt-10 pb-15 cursor-pointer"
           >
-            <ReviewCard item={item} />
+            {CardComponent && <CardComponent item={item} />}
           </SwiperSlide>
         ))}
         <div className="swiper-pagination"></div>
       </Swiper>
 
       {/* Back Button */}
-      <button className="hidden md:flex swiper-button-prev-custom absolute left-[1%] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
+      <button className="flex swiper-button-prev-custom absolute left-[1%] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
         <svg
           className="w-6 h-6 text-black"
           fill="none"
@@ -69,8 +70,9 @@ export default function SimpleSlider({ slides }) {
         </svg>
       </button>
 
+      {/* hidden md:flex // Show on medium and larger screens */}
       {/* Forward Button */}
-      <button className="hidden md:flex swiper-button-next-custom absolute right-[1%]  top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
+      <button className="flex swiper-button-next-custom absolute right-[1%]  top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-gray-50 transition-colors z-20 cursor-pointer">
         <svg
           className="w-6 h-6 text-black"
           fill="none"
