@@ -10,8 +10,7 @@ export default function Footer() {
           <div className="flex flex-col items-center  gap-2">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190640.5391567822!2d-88.17664205!3d41.704150500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4fd82fdf19c4ef99%3A0xc0901d66ae617089!2sNovaFiber%20LLC!5e0!3m2!1sru!2sua!4v1776800188308!5m2!1sru!2sua"
-              // width="600"
-              // height="450"
+              title="Google Map"
               className="border-0 max-w-150 w-full min-h-112.5 h-full object-cover"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

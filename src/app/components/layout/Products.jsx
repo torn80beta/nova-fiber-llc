@@ -12,6 +12,7 @@ export default function Products() {
       <p className="text-3xl sm:text-4xl font-bold text-center">
         Best Selling Products
       </p>
+
       <div
         id="products"
         className="grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-10.5 items-center justify-center"
