@@ -6,7 +6,6 @@ export default function Features() {
   return (
     <section
       id="features"
-      // max-w-90 sm:max-w-149 md:max-w-218.5 desktop:max-w-360
       className="py-10 desktop:py-20 w-full max-w-90 sm:max-w-149 md:max-w-218.5 desktop:max-w-360 px-16 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-7 items-center justify-center"
     >
       {/* Heading */}
@@ -36,8 +35,8 @@ export default function Features() {
       <div className="max-w-71 desktop:justify-self-center">
         <p className="text-2xl font-bold mb-5">Affordable Price</p>
         <p className="mb-3.5 text-justify">
-          You can get a workspace of the highst quality at an affordable price
-          and still enjoy the facilities that are oly here.
+          You can get a workspace of the highest quality at an affordable price
+          and still enjoy the facilities that are only here.
         </p>
         <div className="flex flex-row justify-start items-center gap-3.5 cursor-pointer">
           <p className="text-amber-600">More Info</p>
