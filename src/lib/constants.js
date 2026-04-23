@@ -1,25 +1,35 @@
-const products = [
-  {
-    id: 1,
-    name: "Sakarias Armchair",
-    image: "/image/products/product_1.jpg",
-  },
-  {
-    id: 2,
-    name: "Baltsar Chair",
-    image: "/image/products/product_2.jpg",
-  },
-  {
-    id: 3,
-    name: "Anjay Chair",
-    image: "/image/products/product_3.jpg",
-  },
-  {
-    id: 4,
-    name: "Nyantuy Chair",
-    image: "/image/products/product_4.jpg",
-  },
+const menuItems = [
+  { href: "#features", label: "Features" },
+  { href: "#products", label: "Products" },
+  { href: "#experiences", label: "Experience" },
+  { href: "#materials", label: "Materials" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#contacts", label: "Contacts" },
+  { href: "#top", label: "Back to top", isBackToTop: true },
 ];
+
+// const products = [
+//   {
+//     id: 1,
+//     name: "Sakarias Armchair",
+//     image: "/image/products/product_1.jpg",
+//   },
+//   {
+//     id: 2,
+//     name: "Baltsar Chair",
+//     image: "/image/products/product_2.jpg",
+//   },
+//   {
+//     id: 3,
+//     name: "Anjay Chair",
+//     image: "/image/products/product_3.jpg",
+//   },
+//   {
+//     id: 4,
+//     name: "Nyantuy Chair",
+//     image: "/image/products/product_4.jpg",
+//   },
+// ];
 
 const testimonials = [
   {
@@ -98,9 +108,9 @@ const testimonials = [
 const works = [
   {
     id: 1,
-    name: "White Sofa",
-    before: "/image/products/photo_1_1.jpg",
-    after: "/image/products/photo_1_2.jpg",
+    name: "Red Sofa",
+    before: "/image/products/photo_4_1.jpg",
+    after: "/image/products/photo_4_2.jpg",
   },
   {
     id: 2,
@@ -116,10 +126,10 @@ const works = [
   },
   {
     id: 4,
-    name: "Red Sofa",
-    before: "/image/products/photo_4_1.jpg",
-    after: "/image/products/photo_4_2.jpg",
+    name: "White Sofa",
+    before: "/image/products/photo_1_1.jpg",
+    after: "/image/products/photo_1_2.jpg",
   },
 ];
 
-export { products, testimonials, works };
+export { menuItems, testimonials, works };

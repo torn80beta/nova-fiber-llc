@@ -2,7 +2,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-// import ReviewCard from "./ReviewCard";
 
 import "swiper/css";
 import "swiper/css/navigation";

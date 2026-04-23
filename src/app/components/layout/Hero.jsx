@@ -1,5 +1,7 @@
 "use client";
 
+import MobileMenu from "@/app/components/shared/MobileMenu";
+
 export default function Hero() {
   return (
     <section className="bg-[url('/image/hero.jpg')] bg-cover bg-center min-h-screen min-w-full flex flex-col justify-between">
@@ -29,7 +31,8 @@ export default function Hero() {
               Contacts
             </a>
           </div>
-          {/* Mobile menu button - can be added later if needed */}
+          {/* Mobile Menu */}
+          <MobileMenu />
         </nav>
 
         {/* Hero Content */}
