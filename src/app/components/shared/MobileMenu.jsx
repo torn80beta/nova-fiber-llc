@@ -74,10 +74,11 @@ export default function MobileMenu() {
       </button>
 
       {/* Floating Hamburger Button - only visible on mobile when scrolling up past hero */}
+      {/* from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 */}
       {shouldShowFloatingButton && (
         <button
           onClick={toggleMenu}
-          className="md:hidden fixed bottom-8 right-8 z-50 flex items-center justify-center text-white bg-linear-to-br from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all duration-300 rounded-full p-4 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
+          className="md:hidden fixed top-3 left-3 z-50 flex items-center justify-center text-white bg-linear-to-br from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 transition-all duration-300 rounded-full p-4 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
           aria-label="Toggle menu"
           aria-expanded={isOpen}
         >
