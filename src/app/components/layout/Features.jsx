@@ -6,7 +6,8 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="py-10 desktop:py-20 max-w-360 w-full px-16 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-7 items-center justify-center"
+      // max-w-90 sm:max-w-149 md:max-w-218.5 desktop:max-w-360
+      className="py-10 desktop:py-20 w-full max-w-90 sm:max-w-149 md:max-w-218.5 desktop:max-w-360 px-16 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-4 gap-7 items-center justify-center"
     >
       {/* Heading */}
       <div className="min-w-60 pb-6 pl-1.5 desktop:mr-26 self-start desktop:self-center">
