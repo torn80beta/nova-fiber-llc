@@ -1,7 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, Fragment } from "react";
 
 const priceData = [
   {
@@ -100,41 +100,40 @@ export default function ModalWindow({ isOpen, onClose }) {
                   </th>
                 </tr>
               </thead>
-              <tbody>
-                {priceData.map((section, sectionIdx) => (
-                  <tbody key={`section-${sectionIdx}`}>
-                    {/* Section Header */}
-                    <tr className="bg-gray-50">
-                      <td
-                        colSpan="2"
-                        className="py-4 px-4 font-bold text-lg text-amber-600 uppercase tracking-wide"
-                      >
-                        {section.category}
+
+              {priceData.map((section, sectionIdx) => (
+                <tbody key={`section-${sectionIdx}`}>
+                  {/* Section Header */}
+                  <tr className="bg-gray-50">
+                    <td
+                      colSpan="2"
+                      className="py-4 px-4 font-bold text-lg text-amber-600 uppercase tracking-wide"
+                    >
+                      {section.category}
+                    </td>
+                  </tr>
+                  {/* Section Items */}
+                  {section.items.map((item, itemIdx) => (
+                    <tr
+                      key={`item-${sectionIdx}-${itemIdx}`}
+                      className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
+                    >
+                      <td className="py-3 px-4 text-gray-700">
+                        {item.name}
+                        {item.unit && (
+                          <span className="text-sm text-gray-500">
+                            {" "}
+                            ({item.unit})
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-3 px-4 text-right font-semibold text-gray-800">
+                        ${item.price}
                       </td>
                     </tr>
-                    {/* Section Items */}
-                    {section.items.map((item, itemIdx) => (
-                      <tr
-                        key={`item-${sectionIdx}-${itemIdx}`}
-                        className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
-                      >
-                        <td className="py-3 px-4 text-gray-700">
-                          {item.name}
-                          {item.unit && (
-                            <span className="text-sm text-gray-500">
-                              {" "}
-                              ({item.unit})
-                            </span>
-                          )}
-                        </td>
-                        <td className="py-3 px-4 text-right font-semibold text-gray-800">
-                          ${item.price}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                ))}
-              </tbody>
+                  ))}
+                </tbody>
+              ))}
             </table>
           </div>
 

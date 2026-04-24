@@ -123,6 +123,19 @@ export default function Footer() {
                   />
                   <p>WhatsApp</p>
                 </a>
+
+                <a
+                  href="sms:+13312537855"
+                  className="relative flex flex-row items-center gap-2.5"
+                >
+                  <Image
+                    src={"/svg/sms.svg"}
+                    alt="Sms"
+                    width={20}
+                    height={20}
+                  />
+                  <p>+13312537855</p>
+                </a>
               </div>
             </div>
             <div className="w-full flex flex-col items-center justify-between gap-5">
