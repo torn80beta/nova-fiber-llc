@@ -1,8 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { MoveRight } from "lucide-react";
+import ModalWindow from "../shared/ModalWindow";
 
 export default function Features() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section
       id="features"

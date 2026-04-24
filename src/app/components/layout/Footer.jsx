@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <section className="max-w-360 w-full flex flex-col items-center justify-center overflow-hidden">
+    <footer className="max-w-360 w-full flex flex-col items-center justify-center overflow-hidden">
       <div className="w-full min-h-115.5 py-20 px-5 sm:px-10 md:px-20 bg-[#F7F7F7] flex flex-col items-center justify-center">
         <div className="w-full h-full grow grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-center">
           {/* Google map */}
@@ -60,9 +60,8 @@ export default function Footer() {
               </div>
 
               {/* Social media links */}
-              <div className="min-h-fit flex flex-col gap-4">
+              <div className="min-h-fit flex flex-col gap-4 mb-10">
                 <p className="mb-2 text-amber-600 text-xl">Follow Us</p>
-
                 {/* Facebook */}
                 <a
                   href="https://www.facebook.com/profile.php?id=61576447468204"
@@ -78,7 +77,6 @@ export default function Footer() {
                   />
                   <p>Facebook</p>
                 </a>
-
                 {/* Twitter-X */}
                 {/* <a
                 href=""
@@ -94,7 +92,6 @@ export default function Footer() {
                 />
                 <p>Twitter</p>
               </a> */}
-
                 {/* Instagram */}
                 <a
                   href="https://www.instagram.com/novafiberllc/"
@@ -110,6 +107,8 @@ export default function Footer() {
                   />
                   <p>Instagram</p>
                 </a>
+
+                <p className="mb-2 mt-5 text-amber-600 text-xl">Text Us</p>
 
                 {/* WhatsApp */}
                 <a
@@ -127,12 +126,18 @@ export default function Footer() {
               </div>
             </div>
             <div className="w-full flex flex-col items-center justify-between gap-5">
-              <a href="">Privacy policy</a>
+              <a
+                href="https://sites.google.com/view/novafiberllcprivacypolicy/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy policy
+              </a>
               <p>&copy; {new Date().getFullYear()} NovaFiber LLC.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
